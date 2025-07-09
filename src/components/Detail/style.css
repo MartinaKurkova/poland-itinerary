@@ -1,0 +1,121 @@
+/* detail */
+.app {
+  padding: 1em;
+}
+
+.detail {
+  margin-top: 2rem;
+  box-sizing: border-box;
+  border: 1px solid #9ED4F1;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+/* Obrázek a nadpis */
+.detail__image-container {
+  position: relative;
+  width: 100%;
+  height: 12em;
+  overflow: hidden;
+}
+
+.detail__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail__heading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+/* Tlačítko pro toggle */
+.detail__toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  padding: 0;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+
+.detail__toggle:focus {
+  outline: 0;
+}
+
+.detail__toggle .fa-times {
+  display: none;
+}
+
+.detail--active .detail__toggle {
+  background-color: #bea15d;
+}
+
+.detail--active .detail__toggle .fa-times {
+  display: block;
+}
+
+.detail--active .detail__toggle .fa-chevron-down {
+  display: none;
+}
+
+/* Textová část */
+.detail__text {
+  padding: 1em;
+}
+
+.detail__day {
+  color: #313131;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.detail__section-heading {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.detail__list {
+  padding: 0 1em;
+  margin: 0;
+}
+
+.detail__item {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+.detail__link {
+  color: #313131;
+  text-decoration: underline;
+}
+
+/* Skrytý text */
+.detail--collapsed .detail__text {
+  display: none;
+}
+
+.detail--active .detail__text {
+  display: block;
+}
+
+

@@ -34,11 +34,24 @@ const initHamburgerMenu = () => {
   }
 };
 
+// itinerář toggle
+const initDetailToggle = () => {
+  const toggles = document.querySelectorAll(".detail__toggle");
+  toggles.forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      const detail = toggle.closest(".detail");
+      detail.classList.toggle("detail--collapsed");
+      detail.classList.toggle("detail--active");
+    });
+  });
+};
+
 // vykreslení aplikace
 const renderApp = () => {
   document.querySelector('#root').innerHTML = render(app());
-  
+
   initHamburgerMenu();
+  initDetailToggle();  
 };
 
 // První vykreslení
