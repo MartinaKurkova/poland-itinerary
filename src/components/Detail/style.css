@@ -3,6 +3,20 @@
   padding: 1em;
 }
 
+.itinerary__heading {
+  font-size: 2em;
+  font-weight: 800;
+  color: #4c8fb9;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 0;
+}
+
+.itinerary__paragraph {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
 .detail {
   margin-top: 2rem;
   box-sizing: border-box;
@@ -99,14 +113,14 @@
 }
 
 .detail__item {
-  list-style: none;
   padding: 0;
   margin-bottom: 0.5em;
 }
 
 .detail__link {
-  color: #313131;
-  text-decoration: underline;
+  color: #4c8fb9;
+  text-decoration: none;
+  
 }
 
 /* Skrytý text */

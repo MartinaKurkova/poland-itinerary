@@ -6,6 +6,14 @@ import { resolveRoute } from "./router";
 import "../global.css";
 import './index.css';
 
+let itineraryData = [];
+
+const fetchData = async () => {
+  const response = await fetch("http://localhost:4000/api/trips");
+  const json = await response.json();
+  itineraryData = json.data;
+};
+
 const app = () => {
   const path = window.location.pathname;
   const PageComponent = resolveRoute(path);
@@ -14,13 +22,13 @@ const app = () => {
     <div className="app">
       <Header name="K Baltu!" />
       <Hero name="Dovolená v Polsku" date="19.&mdash;26. 7. 2025"/>
-      <main>{PageComponent()}</main>
+      <main>{PageComponent({ itineraryData })}</main>
       <Footer />
     </div>
   );
 };
 
-// inicializace hamburger menu
+// hamburger menu
 const initHamburgerMenu = () => {
   const hamMenu = document.querySelector(".menu__hamburger");
   const menu = document.querySelector(".menu");
@@ -34,7 +42,7 @@ const initHamburgerMenu = () => {
   }
 };
 
-// itinerář toggle
+// toggle detail
 const initDetailToggle = () => {
   const toggles = document.querySelectorAll(".detail__toggle");
   toggles.forEach(toggle => {
@@ -46,23 +54,24 @@ const initDetailToggle = () => {
   });
 };
 
-// vykreslení aplikace
-const renderApp = () => {
+// hlavní render funkce
+const renderApp = async () => {
+  await fetchData(); // nejdřív načti data
   document.querySelector('#root').innerHTML = render(app());
 
   initHamburgerMenu();
-  initDetailToggle();  
+  initDetailToggle();
 };
 
-// První vykreslení
+// první načtení
 renderApp();
 
-// nerefresh navigace
-document.addEventListener('click', (e) => {
+// nerefresh navigace – musí být taky async!
+document.addEventListener('click', async (e) => {
   const link = e.target.closest('a');
   if (link?.hostname === window.location.hostname && link.getAttribute('href')?.startsWith('/')) {
     e.preventDefault();
     window.history.pushState({}, '', link.href);
-    renderApp();
+    await renderApp();
   }
 });
