@@ -1,0 +1,54 @@
+/* Hero */
+.hero {
+  width: 100%;
+  height: 35vh;
+  background-image: url(../../img/hero2.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 1em;
+  mask-image: url("../../img/vlna.svg");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: bottom;
+  -webkit-mask-image: url("../../img/vlna.svg");
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: bottom;
+}
+
+.hero__heading {
+  margin-bottom: 0;
+  color: #4c8fb9;
+  max-width: 200px;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 1.15;
+}
+.hero__subheading {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: #bea15d;
+}
+
+.hero__button {
+  width: fit-content;
+  display: inline-block;
+  padding: 6px 20px;
+  background-color: #bea15d;
+  border-color: #4c8fb9;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}

@@ -1,0 +1,97 @@
+/* Trip */
+.trip {
+  padding: 1em 1.5em;
+  box-sizing: border-box;
+}
+
+.trip__heading {
+  font-size: 2em;
+  font-weight: 800;
+  color: #4c8fb9;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 0;
+}
+
+.trip__paragraph {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+.trip__image {
+  max-width: 100%;
+}
+
+.trip__list {
+  counter-reset: trip-counter;
+  list-style: none;
+  padding: 0;
+}
+
+.trip__item {
+  counter-increment: trip-counter;
+  position: relative;
+  padding-left: 2.2em;
+  margin-bottom: 2em;
+}
+
+.trip__item::before {
+  content: counter(trip-counter);
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.6em;
+  border-radius: 50%;
+  background: #bea15d;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.trip__item:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  left: 0.3em;
+  top: 1.5em;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.trip__box {
+  background-color: #deeaf0;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #4c8fb9;
+  padding: 8px;
+}
+
+th {
+  background-color: #4c8fb9;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #9ED4F1;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+.table__heading {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
