@@ -4,7 +4,7 @@ export const Detail = ({ data }) => {
     return (
         <div className="detail detail--collapsed">
             <div className="detail__image-container">
-                <img src={`http://localhost:4000${data.image}`} alt={data.name} className="detail__image"/>
+                <img src={`https://poland-api.onrender.com${data.image}`} alt={data.name} className="detail__image" />
                 <h2 className="detail__heading-overlay">{data.name}</h2>
                 <button className="detail__toggle">
                 <i className="fas fa-chevron-down"></i>
