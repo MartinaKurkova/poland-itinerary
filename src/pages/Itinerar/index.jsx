@@ -2,6 +2,17 @@ import "./style.css";
 import { Detail } from "../../components/Detail";
 
 export const Itinerar = ({ itineraryData }) => {
+    if (!itineraryData || !Array.isArray(itineraryData)) {
+        return (
+            <main className="main">
+                <div className="itinerary">
+                    <h1 className="itinerary__heading">Itinerář</h1>
+                    <p>Data se načítají nebo nejsou dostupná.</p>
+                </div>
+            </main>
+        );
+    }
+
     return (
         <main className="main">
             <div className="itinerary">
@@ -23,5 +34,5 @@ export const Itinerar = ({ itineraryData }) => {
                 ))}
             </div>
         </main>
-    )
+    );
 }
