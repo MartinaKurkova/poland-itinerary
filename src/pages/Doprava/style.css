@@ -13,6 +13,16 @@
   margin-bottom: 0;
 }
 
+.trip__subheading {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #4c8fb9;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
 .trip__paragraph {
   margin-bottom: 1.5em;
   line-height: 1.6;

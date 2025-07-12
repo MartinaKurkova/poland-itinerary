@@ -7,19 +7,19 @@ export const Doprava = () => {
                 <h1 className="trip__heading">Cesta Baltic expressem</h1>
                 <p className="trip__paragpraph">Naše cesta do Polska začne v Kolíně, odkud vyrazíme vlakem Baltic Express přímo směrem na sever. Tento spoj nás pohodlně doveze až do Gdyně, jednoho z měst v oblasti Trojměstí. Odtud budeme pokračovat autobusem do Rewy, našeho cílového přímořského letoviska.</p>
                 {/* cesta tam */}
-                <h2 className="trip__heading">Kolín&mdash;Rewa</h2>
+                <h2 className="trip__subheading">Kolín–Rewa</h2>
                 <ul className="trip__list">
-                    <li className="trip__item">Kolín hl. n. – 7.32, Ex32 (EC 264 Baltic express), vůz 349, místa 71, 72, 73, 78</li>
-                    <li className="trip__item">Gdynia Glówna – 15.58</li>
-                    <li className="trip__item">Dworzec PKP Gdynia Glówna, hala 02 – bus 146 – 16.52 / 18.02</li>
-                    <li className="trip__item">Rewa Bosmanska – 17.32 / 18.42</li>
+                    <li className="trip__item"><strong>Kolín hl. n.:</strong> 7.32 h, <a href="https://www.cd.cz/vlak/264/19.7.2025/5453414/7.32/5100010/15.58/">EC 264 Baltic Express</a>, vůz 349, místa 71, 72, 73, 78</li>
+                    <li className="trip__item"><strong>Gdynia Glówna:</strong> 15.58 h</li>
+                    <li className="trip__item"><strong>Dworzec PKP Gdynia Glówna:</strong> hala 02, autobus 146: 16.52 h / 18.02 h</li>
+                    <li className="trip__item"><strong>Rewa Bosmańska:</strong> 17.32 h / 18.42 h</li>
                 </ul>
 
                 {/* Polsko */}
                 <div className="trip__box">
-                    <h2 className="trip__heading">Cestování po Polsku</h2>
-                    <p className="trip__paragpraph">Po Polsku budeme k cestování využívat veřejnou dopravu – MHD, autobusy a vlaky.</p>
-                    <p className="trip__paragpraph">Děti do čtyř let cestují zdarma. (V Gdyni možná do sedmi let).</p>
+                    <h2 className="trip__subheading">Cestování po Polsku</h2>
+                    <p className="trip__paragpraph">K cestování po Polsku budeme využívat veřejnou dopravu – MHD, autobusy a vlaky.</p>
+                    <p className="trip__paragpraph">Děti do čtyř let cestují zdarma (v Gdyni do sedmi let).</p>
                     {/* MHD */}
                     <h3 className="table__heading">MHD</h3> 
                     <table className="table" cellpadding="5" cellspacing="0">
@@ -61,14 +61,13 @@ export const Doprava = () => {
                 </div>
         
                 {/* cesta domu */}
-                <h2 className="trip__heading">Rewa&mdash;Kolín</h2>
+                <h2 className="trip__subheading">Rewa–Kolín</h2>
                 <ul className="trip__list">
-                    <li className="trip__item">Rewa Bosmanska – bus 146 – 9.50</li>
-                    <li className="trip__item">Dworzec PKP Gdynia Glówna, hala 03 – 10.29</li>
-                    <li className="trip__item">Gdynia Glówna – 12.00, IC 265 Baltic express, vůz 349, místa 31, 32, 33, 38</li>
-                    <li className="trip__item">Kolín hl. n. – 20.25</li>
+                    <li className="trip__item"><strong>Rewa Bosmańska:</strong> autobus 146: 9.50 h</li>
+                    <li className="trip__item"><strong>Dworzec PKP Gdynia Glówna:</strong> hala 03, 10.29 h</li>
+                    <li className="trip__item"><strong>Gdynia Glówna:</strong> 12.00 h, <a href="https://www.cd.cz/vlak/265/26.7.2025/5100010/12.00/5453414/20.25/">IC 265 Baltic express</a>, vůz 349, místa 31, 32, 33, 38</li>
+                    <li className="trip__item"><strong>Kolín hl. n.:</strong> 20.25 h</li>
                 </ul>
-
             </section>
     </main>
     )

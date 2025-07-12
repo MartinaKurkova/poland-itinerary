@@ -11,7 +11,7 @@ export const Ubytovani = () => {
           <h2 className="contact__heading">Apartamenty Rodzinne Czapla</h2>
           <h3 className="contact__subheading">Kontakt:</h3>
           <ul className="home__list">
-            <li className="home__item">ul. Klebby 10, Rewa, Polsko</li>
+            <li className="home__item">Józefa Klebby 10, Rewa, Polsko</li>
             <li className="home__item">+48 603 780 502</li>
           </ul>
         </div>
@@ -104,20 +104,20 @@ export const Ubytovani = () => {
         {/* informace */}
         <h3 className="home__subheading">Důležité informace:</h3>
         <ul className="home__list">
-          <li className="home__item">Příjezd: mezi 15:00 a 20:00 (je potřeba se ohlásit min. 1 hodinu předem)</li>
-          <li className="home__item">Odjezd: do 11:00 (nahlásit odjezd nejméně 1 hodinu předem)</li>
-          <li className="home__item">Noční klid: 22:00–7:00</li>
+          <li className="home__item">Příjezd: mezi 15.00 h a 20.00 h (je potřeba se ohlásit min. 1 hodinu předem)</li>
+          <li className="home__item">Odjezd: do 11.00 h (nahlásit odjezd nejméně 1 hodinu předem)</li>
+          <li className="home__item">Noční klid: 22.00–7.00 h</li>
           <li className="home__item">Ztráta klíčů: poplatek 150 zł</li>
           <li className="home__item">
             Platba předem za celý pobyt (v hotovosti v PLN) – Kauce 15 % se platí po rezervaci (vratnost závisí na době případného zrušení)
           </li>
-          <li className="home__item">Turistický poplatek: 1,80 zł/osoba/noc (platí se na místě)</li>
         </ul>
         <img src="/img/apartment1.webp" alt="apartment Rewa" className="home__image" />
 
         <h3 className="home__subheading">Doplatek:</h3>
         <ul className="home__list">
           <li className="home__item">Ještě je třeba doplatit 2083 zl za ubytování.</li>
+           <li className="home__item">Turistický poplatek: 1,80 zł/osoba/noc (platí se na místě) – za čtyři osoby to dělá 50,4 zl.</li>
         </ul>
       </div>
     </main>

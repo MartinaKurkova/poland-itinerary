@@ -60,7 +60,7 @@ export const Slovnicek = () => {
                 <tr><td>Voda</td><td>Woda</td><td>Voda</td></tr>
                 <tr><td>Cukr</td><td>Cukier</td><td>Cu-kjer</td></tr>
                 <tr><td>Sýr</td><td>Ser</td><td>Ser</td></tr>
-                <tr><td>Platít</td><td>Płacić</td><td>Pła-čich</td></tr>
+                <tr><td>Platit</td><td>Płacić</td><td>Pła-čich</td></tr>
                 <tr><td>Kde je pokladna?</td><td>Gdzie jest kasa?</td><td>Gdje jest kasa?</td></tr>
                 </tbody>
             </table>
