@@ -123,7 +123,7 @@
 .detail__link {
   color: #4c8fb9;
   text-decoration: none;
-  
+  display: block;
 }
 
 /* Skrytý text */
