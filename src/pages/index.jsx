@@ -9,7 +9,7 @@ import './index.css';
 let itineraryData = [];
 
 const fetchData = async () => {
-  const response = await fetch("http://localhost:4000/api/trips");
+  const response = await fetch("https://poland-api.onrender.com/api/trips");
   const json = await response.json();
   itineraryData = json.data;
 };
