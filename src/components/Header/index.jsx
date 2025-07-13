@@ -22,10 +22,10 @@ export const Header = ( {name} ) => {
                 <a href="/Ubytovani" className="menu__link">Ubytování</a>
               </li>
               <li className="menu__item">
-                <a href="/Itinerar" className="menu__link">Itinerář</a>
+                <a href="/Slovnicek" className="menu__link">Slovníček</a>
               </li>
               <li className="menu__item">
-                <a href="/Slovnicek" className="menu__link">Slovníček</a>
+                <a href="/Itinerar" className="menu__link">Itinerář</a>
               </li>
             </ul>
 

@@ -9,17 +9,17 @@ table {
 }
 
 th, td {
-  border: 1px solid #4c8fb9;
+  border: 1px solid #64b8ed;
   padding: 8px;
 }
 
 th {
-  background-color: #4c8fb9;
+  background-color: #64b8ed;
   color: white;
 }
 
 tr:nth-child(even) {
-  background-color: #9ED4F1;
+  background-color: #89cbf4;
 }
 
 tr:nth-child(odd) {

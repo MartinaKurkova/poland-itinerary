@@ -24,7 +24,7 @@ export const Itinerar = ({ itineraryData }) => {
                     <li className="trip__item"><strong>Neděle 20. 7.</strong> Rewa – pláž a cyklovýlet</li>
                     <li className="trip__item"><strong>Pondělí 21. 7.</strong> Babie Doly, Mechelinki – pláž a pěší výlet</li>
                     <li className="trip__item"><strong>Úterý 22. 7.</strong> Gdaňsk – muzeum a historické centrum, případně pláž</li>
-                    <li className="trip__item"><strong>Středa 23. 7.</strong> Gdyně – centrum města, přístav, akvárium, Orlowo – molo a pláž</li>
+                    <li className="trip__item"><strong>Středa 23. 7.</strong> Gdyně – centrum města, přístav, akvárium, Orlowo</li>
                     <li className="trip__item"><strong>Čtvrtek 24. 7.</strong> ZOO Gdaňsk, Sopoty – pláž</li>
                     <li className="trip__item"><strong>Pátek 25. 7.</strong> Hel – výlet lodí, pláž</li>
                 </ul>

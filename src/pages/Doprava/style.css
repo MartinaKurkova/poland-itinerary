@@ -7,7 +7,7 @@
 .trip__heading {
   font-size: 2em;
   font-weight: 800;
-  color: #4c8fb9;
+  color: #64b8ed;
   text-transform: uppercase;
   line-height: 1.15;
   margin-bottom: 0;
@@ -16,16 +16,27 @@
 .trip__subheading {
   font-size: 1.5em;
   font-weight: 800;
-  color: #4c8fb9;
+  color: #64b8ed;
   text-transform: uppercase;
   line-height: 1.15;
   margin-bottom: 0;
   margin-top: 1em;
 }
 
+.trip__subheading--box {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .trip__paragraph {
   margin-bottom: 1.5em;
   line-height: 1.6;
+  color: #313131;
 }
 
 .trip__image {
@@ -45,6 +56,10 @@
   margin-bottom: 2em;
 }
 
+.trip__item a {
+  color: #64b8ed;
+}
+
 .trip__item::before {
   content: counter(trip-counter);
   position: absolute;
@@ -54,7 +69,7 @@
   height: 1.6em;
   line-height: 1.6em;
   border-radius: 50%;
-  background: #bea15d;
+  background: #ffbf00;
   color: white;
   font-weight: bold;
   font-size: 0.9em;
@@ -71,10 +86,28 @@
 }
 
 .trip__box {
-  background-color: #deeaf0;
-  border-radius: 10px;
-  padding: 1em;
+  padding: 2em;
   margin-bottom: 1em;
+}
+
+.trip__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trip__button {
+  width: fit-content;
+  display: inline-block;
+  padding: 6px 20px;
+  background-color: #64b8ed;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 1em;
 }
 
 table {
@@ -89,12 +122,12 @@ th, td {
 }
 
 th {
-  background-color: #4c8fb9;
+  background-color: #64b8ed;
   color: white;
 }
 
 tr:nth-child(even) {
-  background-color: #9ED4F1;
+  background-color: #89cbf4;
 }
 
 tr:nth-child(odd) {
@@ -105,3 +138,9 @@ tr:nth-child(odd) {
   margin-top: 1em;
   margin-bottom: 0;
 }
+
+.poland {
+  background-color: #ffbf00;
+  border-radius: 0 0 30px 30px;
+}
+

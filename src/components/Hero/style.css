@@ -1,8 +1,8 @@
 /* Hero */
 .hero {
   width: 100%;
-  height: 35vh;
-  background-image: url(../../img/hero2.jpg);
+  height: 30vh;
+  background-image: url(../../img/alexander-henke-nEMjdYU6g4s-unsplash.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
   font-family: "Asap", sans-serif;
   font-weight: 700;
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1em 2em;
   mask-image: url("../../img/vlna.svg");
   mask-size: cover;
   mask-repeat: no-repeat;
@@ -26,26 +26,27 @@
 
 .hero__heading {
   margin-bottom: 0;
-  color: #4c8fb9;
-  max-width: 200px;
+  color: white;
+  font-size: 3em;
+  line-height: 1;
   text-transform: uppercase;
-  font-size: 35px;
-  line-height: 1.15;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .hero__subheading {
   margin-top: 0;
-  font-weight: 400;
-  font-size: 1.6em;
-  color: #bea15d;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero__button {
   width: fit-content;
   display: inline-block;
   padding: 6px 20px;
-  background-color: #bea15d;
-  border-color: #4c8fb9;
-  border-radius: 5px;
+  background-color: #ffbf00;
+  border-radius: 10px;
   border: none;
   color: white;
   text-decoration: none;
