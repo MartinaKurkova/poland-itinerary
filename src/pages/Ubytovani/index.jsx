@@ -4,7 +4,7 @@ import { Carousel } from "../../components/Carousel";
 export const Ubytovani = () => {
   return (
     <main className="main">
-      <div className="home">
+      <section className="home">
         <h1 className="home__heading">Ubytování</h1>
 
         {/* kontakt */}
@@ -96,7 +96,6 @@ export const Ubytovani = () => {
           <li className="home__item">Parkování přímo u objektu (zdarma)</li>
           <li className="home__item">Uzamykatelný prostor pro kola</li>
         </ul>
-        <Carousel />
 
         {/* informace */}
         <h3 className="home__subheading">Důležité informace:</h3>
@@ -115,7 +114,11 @@ export const Ubytovani = () => {
           <li className="home__item">Ještě je třeba doplatit 2083 zl za ubytování.</li>
            <li className="home__item">Turistický poplatek: 1,80 zł/osoba/noc (platí se na místě) – za čtyři osoby to dělá 50,4 zl.</li>
         </ul>
-      </div>
+      </section>
+      <section className="gallery">
+        <h2 className="gallery__heading">Galerie</h2>
+        <Carousel />
+      </section>
     </main>
   );
 };

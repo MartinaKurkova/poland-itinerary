@@ -24,18 +24,20 @@ export const Carousel = () => {
     });
   };
 
-  // Pokud používáš vlastní `render()` systém, můžeš zavolat handleMount po vykreslení
   setTimeout(handleMount, 0);
 
   return (
-    <div class="carousel">
-      <div class="carousel-track">
-        <img src="../../img/apartment1.webp" class="carousel-slide" />
-        <img src="../../img/bathroom.jpg" class="carousel-slide" />
-        <img src="../../img/bedroom.jpg" class="carousel-slide" />
+    <div className="carousel">
+      <div className="carousel-track">
+        <img src="../../img/apartment1.webp" className="carousel-slide" />
+        <img src="../../img/bathroom.jpg" className="carousel-slide" />
+        <img src="../../img/bedroom.jpg" className="carousel-slide" />
+        <img src="../../img/kitchen.jpg" className="carousel-slide" />
+        <img src="../../img/living_room.jpg" className="carousel-slide" />
+        <img src="../../img/outdoor.webp" className="carousel-slide" />
       </div>
-      <button class="carousel-button prev">‹</button>
-      <button class="carousel-button next">›</button>
+      <button className="carousel-button prev">‹</button>
+      <button className="carousel-button next">›</button>
     </div>
   );
 };

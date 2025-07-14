@@ -1,7 +1,7 @@
 /* Hero */
 .hero {
   width: 100%;
-  height: 30vh;
+  height: 17rem;
   background-image: url(../../img/alexander-henke-nEMjdYU6g4s-unsplash.jpg);
   background-position: left;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   font-family: "Asap", sans-serif;
   font-weight: 700;
   box-sizing: border-box;
-  padding: 1em 2em;
+  padding: 4rem 1.5rem;
   mask-image: url("../../img/vlna.svg");
   mask-size: cover;
   mask-repeat: no-repeat;
@@ -32,9 +32,11 @@
   text-transform: uppercase;
   font-weight: 600;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding-top: 1rem;
 }
 .hero__subheading {
   margin-top: 0;
+  margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: 1.8em;
   color: white;

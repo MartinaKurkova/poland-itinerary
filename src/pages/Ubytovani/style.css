@@ -1,11 +1,11 @@
 /* Home */
 .home {
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   box-sizing: border-box;
 }
 
 .home__heading {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 800;
   color: #64b8ed;
   text-transform: uppercase;
@@ -14,18 +14,18 @@
 }
 
 .home__paragraph {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
 .home__image {
-  border-radius: 1em;
+  border-radius: 2rem;
   max-width: 100%;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .home__list {
-  padding-left: 1em;
+  padding-left: 1rem;
   margin: 0;
 }
 
@@ -51,7 +51,18 @@
 }
 
 .map__container {
-  margin-top: 1em;
- width: 100%;
+  margin-top: 1rem;
+  width: 100%;
   border-radius: 10px;
+}
+
+.gallery {
+  background-color: #64b8ed;
+  padding: 2rem;
+  border-radius: 4rem 4rem 0 0;
+}
+
+.gallery__heading {
+  color: white;
+  text-align: center;
 }

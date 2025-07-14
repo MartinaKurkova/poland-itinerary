@@ -21,7 +21,7 @@ const app = () => {
   return (
     <div className="app">
       <Header name="K Baltu!" />
-      <Hero name="Dovolená v Polsku" date="19.&mdash;26. 7. 2025"/>
+      <Hero name="Dovolená v&nbsp;Polsku" date="19.&mdash;26. 7. 2025"/>
       <main>{PageComponent({ itineraryData })}</main>
       <Footer />
     </div>
