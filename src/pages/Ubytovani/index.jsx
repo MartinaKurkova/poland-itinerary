@@ -1,4 +1,5 @@
 import "./style.css";
+import { Carousel } from "../../components/Carousel";
 
 export const Ubytovani = () => {
   return (
@@ -46,7 +47,6 @@ export const Ubytovani = () => {
           <li className="home__item">Jídelní sada pro 6 osob (talíře, misky, hrnky, příbory)</li>
           <li className="home__item">Čisticí prostředky (houbička, jar, utěrka)</li>
         </ul>
-        <img src="/img/kitchen.jpg" alt="apartment kitchen" className="home__image" />
 
         {/* ložnice */}
         <h3 className="home__subheading">Ložnice:</h3>
@@ -55,7 +55,6 @@ export const Ubytovani = () => {
           <li className="home__item">Šatní skříň</li>
           <li className="home__item">Lůžkoviny</li>
         </ul>
-        <img src="/img/bedroom.jpg" alt="apartment bedroom" className="home__image" />
 
         {/* obývací pokoj */}
         <h3 className="home__subheading">Obývací pokoj:</h3>
@@ -66,7 +65,6 @@ export const Ubytovani = () => {
           <li className="home__item">Klimatizace</li>
           <li className="home__item">Přístup na terasu do zahrady</li>
         </ul>
-        <img src="/img/living_room.jpg" alt="apartment living room" className="home__image" />
 
         {/* koupelna */}
         <h3 className="home__subheading">Koupelna:</h3>
@@ -78,7 +76,6 @@ export const Ubytovani = () => {
           <li className="home__item">Přístup k pračce</li>
           <li className="home__item">Sušák na prádlo</li>
         </ul>
-        <img src="/img/bathroom.jpg" alt="apartment bathroom" className="home__image" />
 
         {/* dětské vybavení */}
         <h3 className="home__subheading">Dětské vybavení (na vyžádání):</h3>
@@ -99,7 +96,7 @@ export const Ubytovani = () => {
           <li className="home__item">Parkování přímo u objektu (zdarma)</li>
           <li className="home__item">Uzamykatelný prostor pro kola</li>
         </ul>
-        <img src="/img/outdoor.webp" alt="apartment outdoor" className="home__image" />
+        <Carousel />
 
         {/* informace */}
         <h3 className="home__subheading">Důležité informace:</h3>
@@ -112,7 +109,6 @@ export const Ubytovani = () => {
             Platba předem za celý pobyt (v hotovosti v PLN) – Kauce 15 % se platí po rezervaci (vratnost závisí na době případného zrušení)
           </li>
         </ul>
-        <img src="/img/apartment1.webp" alt="apartment Rewa" className="home__image" />
 
         <h3 className="home__subheading">Doplatek:</h3>
         <ul className="home__list">
